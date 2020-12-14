@@ -1,1 +1,62 @@
+/* ------------------ Common Setting ------------------ */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+ul,
+li {
+  padding-inline-start: 0;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+/* ------------------ Container ------------------ */
+
+.container {
+  padding: 10px;
+  width: 380px;
+  margin: 0 auto;
+}
+
+/* ------------------ Header ------------------ */
+
+.header {
+  width: 380px;
+  height: 200px;
+  background-image: url("../img/bg1.jpg");
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+}
+
+.clear {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.clear i {
+  color: #fff;
+  font-size: 30px;
+}
+
+.clear i:hover {
+  /* 돌아갈 수 있도록 할 것 */
+  cursor: pointer;
+  text-shadow: 1px 3px 5px #000;
+  transform: rotate(360deg);
+  transition: transform 3s ease-in-out;
+}
+
+#date {
+  /* 날짜 적는 칸 */
+}
