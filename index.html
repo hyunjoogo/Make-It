@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/433848c43a.js" crossorigin="anonymous"></script>
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>To-Do-List</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <i class="fas fa-sync refresh"></i>
+      <span class="date"></span>
+    </div>
+    <div class="content">
+      <ul id="list">
+        <li class="content-item">
+          <i class="far fa-circle complete"></i>
+          <span class="content-text"></span>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+      </ul>
+      <div class="add-item">
+        <i class="fas fa-plus-circle add"></i>
+        <form action="">
+          <input type="text" id="add-text" placeholder="할 일 추가">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
