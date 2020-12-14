@@ -37,8 +37,8 @@ li {
 }
 
 .clear {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   position: absolute;
   right: 20px;
   top: 20px;
@@ -46,17 +46,31 @@ li {
 
 .clear i {
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .clear i:hover {
-  /* 돌아갈 수 있도록 할 것 */
   cursor: pointer;
   text-shadow: 1px 3px 5px #000;
   transform: rotate(360deg);
   transition: transform 3s ease-in-out;
 }
 
+.now {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#date,
+#time {
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  line-height: 1;
+  text-shadow: 1px 3px 5px #000;
+}
+
 #date {
-  /* 날짜 적는 칸 */
+  font-size: 15px;
 }

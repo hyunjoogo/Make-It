@@ -6,7 +6,7 @@
   <script src="https://kit.fontawesome.com/433848c43a.js" crossorigin="anonymous"></script>
   <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="index.css">
-  <script src="index.js"></script>
+  <script src="clock.js" defer></script>
   <title>To-Do-List</title>
 </head>
 <body>
@@ -15,7 +15,10 @@
       <div class="clear">
         <i class="fas fa-sync-alt"></i>
       </div>
-      <span id="date"></span>
+      <div class="now">
+        <p id="date"></p>
+        <p id="time"></p>
+      </div>
     </div>
     <div class="content">
       <ul id="list">
