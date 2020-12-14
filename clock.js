@@ -1,3 +1,5 @@
+'use strict';
+
 const clockDateScreen = document.getElementById('date');
 const clockTimeScreen = document.getElementById('time');
 

@@ -7,6 +7,7 @@
   <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="index.css">
   <script src="clock.js" defer></script>
+  <script src="todo.js" defer></script>
   <title>To-Do-List</title>
 </head>
 <body>
@@ -23,14 +24,14 @@
     <div class="content">
       <ul id="list">
         <li class="content-item">
-          <i class="far fa-circle complete"></i>
-          <span class="content-text"></span>
-          <i class="far fa-trash-alt delete"></i>
+          <i class="far fa-circle complete" job="complete" id="0"></i>
+          <p class="content-text">예시</p>
+          <i class="far fa-trash-alt delete" job="complete" id="0"></i>
         </li>
       </ul>
       <div class="add-item">
         <i class="fas fa-plus-circle add"></i>
-        <form action="">
+        <form action="" class="toDoForm">
           <input type="text" id="add-text" placeholder="할 일 추가">
         </form>
       </div>
