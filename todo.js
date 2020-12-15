@@ -81,8 +81,13 @@ function addToDo(toDo, id, done, trash) {
 
 function loadToDos() {
   const data = localStorage.getItem(TODOS_LS);
+  console.log(data);
   if (data !== null) {
     const parseToDos = JSON.parse(data);
+    console.log(parseToDos);
+    toDos.push(parseToDos);
+    console.log(toDos.push(parseToDos));
+    console.log(toDos);
     parseToDos.forEach(function (toDo) {
       addToDo(toDo.name, toDo.id, toDo.done, toDo.trash);
     });
