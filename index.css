@@ -83,3 +83,12 @@ li {
   max-height: 350px;
   background-color: #fff;
 }
+
+.content-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lineThrough {
+  color: red;
+}
