@@ -8,7 +8,7 @@ let drawing = false;
 
 ctx.lineWidth = 30;
 ctx.lineCap = "round";
-ctx.strokeStyle = black;
+ctx.strokeStyle = "black";
 
 const draw = e => {
   const x = e.clientX;
@@ -24,3 +24,13 @@ canvas.addEventListener("mouseout", () => (drawing = false));
 canvas.addEventListener("mousedown", () => (drawing = true));
 canvas.addEventListener("mouseup", () => (drawing = false));
 canvas.addEventListener("mousemove", draw);
+
+const changeColor = e => {
+  console.log(e);
+  const color = e.target.className;
+  ctx.strokeStyle = color;
+};
+
+colors.forEach(color => {
+  color.addEventListener("click", changeColor);
+});
